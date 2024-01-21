@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dday.css">
+    <script src="dday.js"></script>
+    <title>D-Day 계산</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>D-Day</h1>
+        <div class="timeShow">
+           <span id="basic"> D-Day를 입력해주세요</span>
+            <!-- 37일 06시간 58분 13초 -->
+            <!-- 타이머가 종료되었습니다. -->
+            <!-- 유효하지 않은 시간대입니다. -->
+            <div id="timeContent" style="display: none;">
+                <span id="timeDay"></span>일 
+                <span id="timeHour"></span>시간
+                <span id="timeMin"></span>분
+                <spain id="timeSec"></spain>초
+            </div>
+        </div>
+        <div class="timeInput">
+            <input type="text" id="year"> -
+            <input type="text" id="month"> -
+            <input type="text" id="day">
+        </div>
+        <div class="resultShow">
+            <button id="countStart" onclick="countStart()">카운트 다운 시작</button>
+        </div>
+        <button id="countReset" onclick="resetCounting()">타이머 초기화</button>
+    </div>
+</body>
+</html>
